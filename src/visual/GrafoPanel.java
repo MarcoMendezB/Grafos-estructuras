@@ -91,10 +91,7 @@ public class GrafoPanel extends JPanel {
         }
     }
 
-    /**
-     * Calcula y asigna las coordenadas (x, y) de los nodos para que queden
-     * distribuidos equitativamente en forma de círculo.
-     */
+
     private void calcularPosicionesNodos(List<Nodo> nodos) {
         int totalNodos = nodos.size();
         int centroX = getWidth() / 2;

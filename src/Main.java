@@ -8,15 +8,15 @@ import javax.swing.SwingUtilities;
 public class Main {
 
     public static void main(String[] args) {
-        // 1. Módulo Persona 1: Pedir la matriz por consola
+        //Pedir la matriz por consola
         MatrizController controller = new MatrizController();
         int[][] matriz = controller.obtenerMatriz();
 
-        // 2. Módulo Persona 2: Construir el modelo del grafo
+        //Construir el modelo del grafo
         Grafo grafo = new Grafo();
         grafo.construirDesdeMatriz(matriz);
 
-        // 3. Módulo Persona 3: Desplegar la ventana gráfica
+        //Desplegar la ventana gráfica
         SwingUtilities.invokeLater(() -> {
             JFrame ventana = new JFrame("Visualizador de Grafos");
             GrafoPanel panel = new GrafoPanel(grafo);
